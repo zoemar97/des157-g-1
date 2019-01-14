@@ -1,0 +1,80 @@
+
+header {
+padding:1rem;
+background-color:white;
+border-radius: 1rem;
+
+}
+
+body {
+  margin:auto;
+  background-image: url("images/background.jpg");
+  text-align: center;
+  width: 800px;
+
+}
+
+#mySketch {
+  height: 250px;
+  color:black;
+}
+
+section {
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  padding: 1rem;
+  border-color: #FEEF63;
+  border-width: 2px;
+  border-radius: 1rem;
+  background-color: white;
+
+}
+
+div{
+  margin-left: 5px;
+  margin-bottom:60px;
+  /* padding: 20px; */
+
+}
+
+
+/* body { */
+  /* display:block; */
+/* } */
+
+
+body {
+color: black;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-size: 1em;
+}
+
+h1 {
+  color:#FEEF63;
+  font-family: 'Coiny', cursive;
+  font-size: 2em;
+  text-shadow: 2px 2px #ED196F;
+  letter-spacing: .03em;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+footer {
+  background: #16AFCB;
+  position: fixed;
+  /* padding: 1rem; */
+  margin-top: 36px;
+  /* text-align: center; */
+  border-radius: 1rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer ul li {
+  display: inline-block;
+  text-align: center;
+  padding: .5rem;
+}
