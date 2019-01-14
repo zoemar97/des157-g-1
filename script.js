@@ -1,4 +1,5 @@
 console.log('reading js')
+
 function setup () {
   //size is createCanvas in p5
   //create a variable to reference the Canvas
@@ -19,7 +20,7 @@ var myCanvas = createCanvas(800,250);
     //size is createCanvas in p5
     //create a variable to reference the Canvas
     //var myCanvas = createCanvas(800,250);
-    //background(#16AFCB);
+    //background('#16AFCB');
 
     //connect myCanvas to mySketch
     //myCanvas.parent('mySketch');
@@ -34,7 +35,7 @@ var myCanvas = createCanvas(800,250);
       //  {
 
        //ellipse(x, y/2, 15, 15);
-       //fill(#FEEF63);
+       //fill('#FEEF63');
 
         //}
 
