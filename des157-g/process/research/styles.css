@@ -1,0 +1,53 @@
+body {
+  width: 800px;
+  height: 250px;
+  align-content: center;
+  /*text-align: center;*/
+  margin: auto;
+  margin-left: 16rem;
+}
+
+body footer {
+  text-align: center;
+}
+div {
+  color: grey;
+  font-family: 'Raleway', italic;
+  font-size: .9em;
+}
+
+h1 {
+  color: #16AFCB;
+  /*turquoise*/
+  font-family: 'Coiny', cursive;
+  font-size: 2.5em;
+  /*text-shadow: 2px 2px #ED196F;*/
+  letter-spacing: .03em;
+  text-align: center;
+}
+
+section {
+  color: black;
+  font-family: 'Raleway', cursive;
+  align: center;
+}
+
+footer {
+  background: #16AFCB;
+  position: fixed;
+  /* padding: 1rem; */
+  margin-top: 36px;
+  /* text-align: center; */
+  /* border-radius: 1rem; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer ul li {
+  color: #B21E59;
+  display: inline-block;
+  text-align: center;
+  padding: .5rem;
+
+}
