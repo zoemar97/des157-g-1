@@ -1,0 +1,98 @@
+html {
+  font-family: Roboto, Arial, Helvetica;
+}
+
+body {
+  font-size: 15px;
+  background-image: url("images/background.jpg");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  color: white;
+  text-align: left;
+}
+
+h1 {
+  min-width: 100px;
+  /* prevents text from breaking */
+  margin-bottom: 0em;
+  margin-left: 18%;
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+  font-weight: normal;
+  color: #B21E59;
+  text-align: center;
+}
+
+form {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 10em;
+  padding-right: 10em;
+  font-size: 1em;
+}
+
+fieldset {
+  display: grid;
+  width: 20%;
+  padding: .5em;
+  border: 0em;
+  /* removes default */
+}
+
+/*#select select {
+  width: 40%;
+  min-width: 120px;
+  margin-left:-10px;
+}*/
+input[type="text"],
+textarea {
+  width: 90%;
+  border-radius: 4px;
+}
+
+input[type="text"],
+textarea,
+select {
+  padding: 4%;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  width: auto;
+  padding: 10px;
+  border: 0px;
+  border-radius: 4px;
+  margin-right: 2%;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  background: #B21E59;
+  ;
+  color: white;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background: #B21E59;
+  color: pink;
+}
+
+footer {
+  background: #B21E59;
+  position: fixed;
+  /* padding: 1rem; */
+  margin-top: 36px;
+  /* text-align: center; */
+  /* border-radius: 1rem; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer ul li {
+  color: white;
+  /*pink*/
+  display: inline-block;
+  text-align: center;
+  padding: .5rem;
+}
