@@ -1,11 +1,56 @@
-body {
-  width: 800px;
-  height: 250px;
-  align-content: center;
-  text-align: center;
-  margin: auto;
-  margin-left: 16rem;
+
+header {
+padding:1rem;
+border-radius: 1rem;
+
 }
+
+body {
+  margin:auto;
+  background-image: url("images/background.jpg");
+  text-align: center;
+  width: 800px;
+
+}
+
+#mySketch {
+  height: 250px;
+  color:black;
+}
+
+section {
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  padding: 1rem;
+  border-color: #FEEF63;
+  border-width: 2px;
+  border-radius: 1rem;
+  background-color:#16AFCB;
+  font-size: 1.2em;
+
+}
+
+div{
+  margin-left: 5px;
+  margin-bottom:60px;
+  /* padding: 20px; */
+
+}
+
+
+body {
+color:#FEEF63;
+font-family: 'Concert One', cursive;
+/* font-size: 1em; */
+}
+
+/* h1 {
+  color:#FEEF63;
+  font-family: 'Coiny', cursive;
+  font-size: 2em;
+  text-shadow: 2px 2px #ED196F;
+  letter-spacing: .03em;
+} */
 
 h1 {
   color: #16AFCB;
@@ -17,8 +62,8 @@ h1 {
   text-align: center;
 }
 
-section {
-  align: center;
+h2 {
+  font-size: 1.2em;
 }
 
 footer {
@@ -29,14 +74,13 @@ footer {
   /* text-align: center; */
   /* border-radius: 1rem; */
   left: 0;
-  bottom: 0;
+  bottom: 0;
   width: 100%;
 }
 
 footer ul li {
-  color: #B21E59;
+  color: #B21E59;/*pink*/
   display: inline-block;
   text-align: center;
   padding: .5rem;
-  text-align: center;
 }
