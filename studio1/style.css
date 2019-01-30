@@ -78,6 +78,14 @@ input[type="reset"]:hover {
 }
 
 #myMsg {
+  display: grid;
+  grid-template-columns:1fr 2fr;
+  padding: 1rem;
+  /* border-color: #FEEF63; */
+  border-width: 2px;
+  border-radius: 1rem;
+  background-color:#16AFCB;
+  font-size: 1.2em;
   width: 50%;
   min-width: 100px;
   padding: 2em;
