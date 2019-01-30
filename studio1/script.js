@@ -2,12 +2,13 @@
 console.log('reading js');
 
 document.querySelector('form').addEventListener('submit', processForm);
-document.querySelector('#r').addEventListener('click', resetForm);
+document.querySelector('#reset').addEventListener('click', resetForm);
 
 //define process function
 function processForm(evt) {
+  console.log('processForm');
 
-  var -ingverb = document.querySelector('#-ingverb').value;
+  var ingverb = document.querySelector('#ingverb').value;
   var noun1 = document.querySelector('#noun1').value;
   var adjective1 = document.querySelector('#adjective1').value;
   var noun2 = document.querySelector('#noun2').value;
@@ -23,9 +24,9 @@ function processForm(evt) {
   //concatenating a message using .innerHTML()
   myMsg.innerHTML =
     'One Valentines day,<p> I was' +
-    -ingverb +
+    ingverb +
     'when I looked in my' +
-    noun1 'and saw a' +
+    noun1 + 'and saw a' +
     adjective1 + noun2 +
     '!' + 'It said will you be my ' +
     adjective2 +
@@ -40,10 +41,11 @@ function processForm(evt) {
 
   msgSection.className = 'show';
 
-  evt.preventfault();
+  evt.preventDefault();
   return false; //stops default behavior
 }
 
-function resetform() {
+function resetForm() {
+  console.log('resetForm');
   msgSection.className = 'hide';
 }

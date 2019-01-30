@@ -5,7 +5,7 @@ html {
 body {
   font-size: 15px;
   background-image: url("images/background.jpg");
-  background-repeat: no-repeat, repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   color: white;
   text-align: left;
@@ -14,7 +14,7 @@ body {
 h1 {
   min-width: 100px;
   /* prevents text from breaking */
-  margin-bottom: 0em;
+  margin-bottom: 0;
   margin-left: 15%;
   font-family: 'Pacifico', cursive;
   font-size: 4em;
@@ -29,13 +29,14 @@ form {
   padding-left: 10em;
   padding-right: 10em;
   font-size: 1em;
+  margin-bottom:5em;
 }
 
 fieldset {
   display: grid;
   width: 20%;
   padding: .5em;
-  border: 0em;
+  border: 0;
   /* removes default */
 }
 
@@ -67,7 +68,6 @@ input[type="reset"] {
   font-weight: bold;
   text-align: center;
   background: #B21E59;
-  ;
   color: white;
 }
 
@@ -92,6 +92,14 @@ input[type="reset"]:hover {
   margin: 1% 12%;
   border-radius: 12px;
   background-color: #B21E59;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 footer {
