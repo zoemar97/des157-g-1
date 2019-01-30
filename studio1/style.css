@@ -15,9 +15,9 @@ h1 {
   min-width: 100px;
   /* prevents text from breaking */
   margin-bottom: 0em;
-  margin-left: 18%;
+  margin-left: 15%;
   font-family: 'Pacifico', cursive;
-  font-size: 2em;
+  font-size: 4em;
   font-weight: normal;
   color: #B21E59;
   text-align: center;
@@ -75,6 +75,15 @@ input[type="submit"]:hover,
 input[type="reset"]:hover {
   background: #B21E59;
   color: pink;
+}
+
+#myMsg {
+  width: 50%;
+  min-width: 100px;
+  padding: 2em;
+  margin: 1% 12%;
+  border-radius: 12px;
+  background-color: #B21E59;
 }
 
 footer {
