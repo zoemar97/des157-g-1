@@ -5,6 +5,7 @@ body {
   /*text-align: center;*/
   margin: auto;
   margin-left: 16rem;
+  /* background-color: pink; */
 }
 
 body footer {
@@ -24,6 +25,13 @@ h1 {
   /*text-shadow: 2px 2px #ED196F;*/
   letter-spacing: .03em;
   text-align: center;
+}
+
+h2 {
+  color: #16AFCB;
+  /*turquoise*/
+  font-family: 'Coiny', cursive;
+  font-size: 1.5em;
 }
 
 section {
