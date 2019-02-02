@@ -23,21 +23,21 @@ function processForm(evt) {
 
   //concatenating a message using .innerHTML()
   myMsg.innerHTML =
-    'One Valentines day,<p> I was' +
+    '<p>One Valentines day, I was ' +
     ingverb +
-    'when I looked in my' +
-    noun1 + 'and saw a' +
-    adjective1 + noun2 +
-    '!' + 'It said will you be my ' +
+    ' when I looked in my ' +
+    noun1 + ' and saw a ' +
+    adjective1 + ' ' + noun2 +
+    '!' + ' It said will you be my ' +
     adjective2 +
-    'valentine?' + 'I ' +
+    ' valentine? ' + 'I ' +
     verb +
     ' to see who it was from. ' + ' Turns out it was from ' +
     name +
-    'I am such a lucky' +
+    ' I am such a lucky ' +
     gender +
-    'to have ' +
-    noun3 + 'in my life!</p>';
+    ' to have ' +
+    noun3 + ' in my life!</p>';
 
   msgSection.className = 'show';
 
