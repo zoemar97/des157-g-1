@@ -37,7 +37,7 @@ h2 {
 section {
   color: black;
   font-family: 'Raleway', cursive;
-  align: center;
+  /* align:center; */
 }
 
 footer {
