@@ -1,7 +1,6 @@
 /* {
   box-sizing: border-box;
 } */
-
 html {
   font-family: Roboto, Arial, Helvetica;
   font-size: 1em;
@@ -9,7 +8,6 @@ html {
 
 body {
   background-color: #16AFCB;
-  /* display: block; */
   /* margin-left: auto;
   margin-right: 13em;
   width: 40%; */
@@ -18,18 +16,37 @@ body {
   /* padding-left: 5em; */
 }
 
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* #iphone {
+  grid-column: 1;
+  grid-row: 1/2;
+}
+
+#airpods {
+  grid-column: 2;
+  grid-row: 2/3;
+}
+
+#airpods {
+  grid-column: 3;
+  grid-row: 3/4;
+} */
+
 img {
-  /* display:block; */
-  width:20%;
-  /* position:relative; */
+  display:inline;
+  width: auto;
+
 }
 
-.pagecontainer {
+/* .pagecontainer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  /* grid-template-rows: .1fr .1fr .1fr; */
-}
-
+  grid-template-columns: 1fr;
+  grid-template-rows: .1fr .1fr .1fr;
+  max-width: 768px;
+} */
 header {
   font-size: 30px;
   font-family: 'Pacifico', cursive;
@@ -44,6 +61,12 @@ h1 {
 }
 
 @media only screen and (min-width: 769px) {
+
+  /* .pagecontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1366px; */
+  /* grid-template-rows: .1fr; */
   footer {
     background: #B21E59;
     position: fixed;
