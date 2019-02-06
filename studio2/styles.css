@@ -55,6 +55,10 @@ section{
 
 }
 
+@media only screen and (min-width: 769px) {
+
+}
+
 footer {
   background: #B21E59;/*pink*/
   position: fixed;
