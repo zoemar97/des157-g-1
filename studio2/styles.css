@@ -13,9 +13,7 @@ section {
   flex-wrap: wrap;
   margin: 1em;
   justify-content: center;
-  /* border: solid;
-  border-color: pink;  */
-  /* border-color: #32adad; */
+
 }
 
 #iphone {
@@ -25,22 +23,45 @@ section {
 }
 
 #airpods {
-  border: none;
+  border: ridged;
   background-color: #444DB2;
   border-radius: 4em;
 }
 
 #chapstick {
-  border: none;
+  border: ridged;
   background-color: #444DB2;
   border-radius: 4em;
 }
 
-/* img {
-  display:inline;
-  width: auto;
+#overlay p {
+  font-family: 'Arial';
+  position: absolute;
+  color:white;
+  text-align: center;
+}
 
-} */
+#overlay {
+  border-radius: 2em;
+  background-color: #ffa08c;
+  transform: translate(-45%, -10%);
+  left: 44%;
+  top: 80%;
+  align-content: center;
+  position: absolute;
+  width: 80%;
+  height: 15%;
+  opacity: 1;
+  display: none;
+}
+
+#close {
+  position: absolute;
+  top: .2em;
+  right: 1em;
+  color: white;
+}
+
 header {
   font-size: 30px;
   font-family: 'Pacifico', cursive;
@@ -54,6 +75,7 @@ h1 {
   align-items: center;
   font-family: 'Concert One', cursive;
 }
+
 
 footer {
   font-family: 'Arial';
@@ -72,13 +94,14 @@ footer a {
   color: white;
 }
 
+
 @media only screen and (min-width: 768px) {
 
   img {
     display: inline;
   }
 
-  #overlay {
+  #overlay{
     border-radius: 1em;
     background-color: #fffff5;
     transform: translate(-50%, -50%);
@@ -89,6 +112,7 @@ footer a {
     width: 40%;
     height: 20%;
   }
+
 
   img {
     display: block;
@@ -114,42 +138,44 @@ footer a {
     color: white;
   }
 
-    #overlay {
-      border-radius: 1em;
-      background-color: white;
-      transform: translate(-50%, -50%);
-      left: 50%;
-      top: 75%;
-      justify-content: center;
-      position: absolute;
-      width: 40%;
-      height: 20%;
-      display: none;
-    }
-
-    p {
-      padding-left: .5em;
-      padding-right: .5em;
-      text-align: center;
-      margin-top: 10%;
-      color: black;
-      line-height: 1.2em;
-    }
-
-    #overlaybutton {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    #close {
-      position: absolute;
-      top: 1em;
-      right: 1em;
-      color: black;
-    }
-
-    #close {
-      cursor: pointer;
-    }
+  #overlay {
+    border-radius: 2em;
+    background-color: #ffa08c;
+    transform: translate(-50%, -45%);
+    left: 50%;
+    top: 75%;
+    justify-content: center;
+    position: absolute;
+    width: 50%;
+    height: 20%;
+    opacity: 1;
+    display: none;
   }
+
+  p {
+    padding-left: .5em;
+    padding-right: .5em;
+    text-align: center;
+    margin-top: 5%;
+    color: white;
+    line-height: 2em;
+  }
+
+  #overlaybutton {
+    display: block;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #close {
+    position: absolute;
+    top: .5em;
+    right: 1em;
+    color: white;
+  }
+
+  #close {
+    cursor: pointer;
+  }
+}
