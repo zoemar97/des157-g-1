@@ -19,19 +19,19 @@ section {
 }
 
 #iphone {
-  border: ridged;
+  border: none;
   background-color: #444DB2;
   border-radius: 4em;
 }
 
 #airpods {
-  border: ridged;
+  border: none;
   background-color: #444DB2;
   border-radius: 4em;
 }
 
 #chapstick {
-  border: ridged;
+  border: none;
   background-color: #444DB2;
   border-radius: 4em;
 }

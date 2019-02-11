@@ -2,7 +2,7 @@
 console.log('reading js');
 
 var iphone = document.querySelector('#iphone');
-var airpods = document.querySelector('#airpods');
+var airpod = document.querySelector('#airpods');
 var chapstick = document.querySelector('#chapstick');
 var p = document.querySelector('#overlay p');
 var close = document.querySelector('#close');
