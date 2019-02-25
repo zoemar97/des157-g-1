@@ -81,7 +81,7 @@ body {
   color: white;
 }
 
-#button {
+#button1,#button {
   border: none;
   padding: 16px 32px;
   text-align: center;
@@ -97,7 +97,7 @@ body {
   border-radius: 50px;
 }
 
-#button:hover {
+#button,#button1:hover {
   background-color: #025C93;
   color: white;
 
