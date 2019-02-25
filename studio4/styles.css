@@ -1,0 +1,123 @@
+body {
+  max-width: 100%;
+  height: 100vh;
+  font-family: 'Helvetica';
+  font-size: 12px;
+  background: linear-gradient(400deg, #025C93, #A6D6ED);
+  animation: bg-sky 41s ease infinite;
+  background-size: 600% 600%;
+}
+
+@keyframes background {
+  0% {
+    background-position: 52% 0%
+  }
+
+  50% {
+    background-position: 49% 100%
+  }
+
+  100% {
+    background-position: 52% 0%
+  }
+}
+
+#scene {
+  width: 550px;
+  height: 350px;
+  position: absolute;
+  top: 50px;
+  left: 500px;
+  z-index: 0;
+  animation: move 20s linear infinite;
+}
+
+#scene:hover {
+  width: 650px;
+  height: 450px;
+}
+
+#scene2 {
+  width: 550px;
+  height: 350px;
+  position: absolute;
+  top: 300px;
+  z-index: 0;
+  animation: move 22s linear infinite;
+}
+
+#scene2:hover {
+  width: 650px;
+  height: 450px;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(-400px);
+  }
+
+  to {
+    transform: translateX(1350px);
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: #025C93;
+  opacity: 0.3;
+  border-radius: 2em;
+}
+
+#content {
+  text-align: center;
+  padding: 350px 32px;
+  color: white;
+}
+
+#button {
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 3px solid white;
+  border-radius: 50px;
+}
+
+#button:hover {
+  background-color: #025C93;
+  color: white;
+
+  h1 {
+    font-size: 1.2em;
+  }
+
+  footer {
+    background: #29B2AE;
+    position: fixed;
+    padding: 1rem;
+    margin-top: 36px;
+    /* text-align: center; */
+    /* border-radius: 1rem; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  footer ul li {
+    color: #29B2AE;
+    display: inline-block;
+  }
