@@ -114,20 +114,22 @@ body {
 }
 
 #button:hover {
+  transition-duration: 0.5s;
   background-color: #025C93;
   color: white;
 }
 
 #button1:hover {
+  transition-duration: 0.5s;
   background-color: #025C93;
   color: white;
 }
   footer {
-    background: #29B2AE;
+    background: #F4A960;
     position: fixed;
     padding: 1rem;
     margin-top: 36px;
-    /* text-align: center; */
+    text-align: center;
     /* border-radius: 1rem; */
     left: 0;
     bottom: 0;
