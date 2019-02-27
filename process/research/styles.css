@@ -17,6 +17,10 @@ div {
   font-size: .9em;
 }
 
+section {
+  padding-left: 110px;
+}
+
 h1 {
   color: #16AFCB;
   /*turquoise*/
