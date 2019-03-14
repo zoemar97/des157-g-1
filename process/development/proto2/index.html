@@ -31,12 +31,12 @@
     <h1 id="title">Separadas.<button id='button'>Petition</button></h1>
 
     <section id="menu">
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-    <div class="bar3"></div>
-  </section>
-  <section id="menuModal">
-  </section>
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </section>
+    <section id="menuModal">
+    </section>
   </header>
   <section class="page" id="page1">
     <img src="images/girl.svg" id="girl" alt="girl" width="200" height="200">
@@ -47,6 +47,7 @@
   <section class="page" id="page4"></section>
   <section class="page" id="page5">
     <form>
+      <h2>Support Migrant Children, Sign the Petition.</h2>
       <fieldset>
         <label for="first">First Name: </label>
         <input type="text" name="first" id="first" value="type your name" required>
@@ -55,14 +56,26 @@
         <label for="last">Last Name: </label>
         <input type="text" name="last" id="last" value="type your last name" required>
       </fieldset>
+      <fieldset>
+        <label for="country">State: </label>
+        <select id="country" name="State">
+          <option value="australia">California</option>
+          <option value="canada">New York</option>
+          <option value="usa">Florida</option>
+          <option value="australia">Utah</option>
+          <option value="canada">Nevada</option>
+          <option value="usa">Oregon</option>
+        </select>
+      </fieldset>
 
       <fieldset>
         <label for="fill">Message: </label>
-        <input type="text" name="fill" id="fill" value="voice your opinion" required>
+        <input type="text" name="subject" id="subject" value="voice your opinion.." required>
       </fieldset>
       <input type="submit" value="submit" id="submit">
       <input type="reset" value="reset" id="reset">
     </form>
+
   </section>
   <footer>
     <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5 |</a>
