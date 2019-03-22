@@ -1,4 +1,8 @@
 /* one page site with scroll */
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0;
@@ -12,7 +16,10 @@ body {
 h2 {
   text-shadow:1px;
   font-size: 25px;
+  font-family: Helvetica;
+  color: #F69A50;
 }
+
 nav {
   position: fixed;
   top: 5.5em;
@@ -52,18 +59,30 @@ a:hover {
   color: #333;
 }
 
-fieldset label {
-  float: left;
-  width:25%;
-  margin-top: 6px;
-  padding: 12px 12px 12px 0;
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: #025C93;
+  border-radius: 2em;
 }
 
-#country {
-  float: left;
-  margin-left:25px;
-  margin-top:20px;
+#content {
+  text-align: center;
+  padding: 350px 32px;
+  color: white;
 }
+
+#state {
+  float: left;
+  margin-left: 1px;
+}
+
 #page1 {
   background-color: #3946FF;
 }
@@ -81,11 +100,8 @@ fieldset label {
 }
 
 #page5 {
-  background-color: #B270ff;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: .1fr .1fr .1fr;
-  margin: auto;
+  background-color: grey;
+
 }
 
 #subject {
@@ -93,24 +109,45 @@ fieldset label {
   height:200px;
 }
 
-.col-75 {
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+}
+
+.row2 {
+  width:90%;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: grey;
+  padding: 20px;
+}
+
+.col-25 {
   float: left;
-  width: 75%;
+  width: 25%;
   margin-top: 6px;
 }
 
-input[type="text"] {
-  background-color: white;
-  border-bottom: 2px solid white;
-  border: 4px;
-  border-radius: 5px;
+.col-75 {
+  float: left;
   width: 65%;
-  padding: 10px 15px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  margin-left: 10px;
-  margin-top: 10px;
-  color: #B270FF;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 #girl {
@@ -126,37 +163,15 @@ input[type="text"] {
   left: 39%;
 }
 
-input[type="submit"],
-input[type="reset"] {
-  width: auto;
-  padding: 12px 20px;
-  background-color: #8943E8;
-  border: 4px;
-  border-radius: 8px;
-  margin-top: 15px;
-  font-size: 1em;
-  color: white;
-}
-
-input[type="submit"]:hover,
-input[type="reset"]:hover {
-  background: white;
-  color: #6F16E8;
-  padding: 12px 20px;
-  border:none;
-  border-radius:4px;
-  cursor:pointer;
-  position:right;
-
-}
-
 /*header section*/
 header {
   display: inline-block;
 }
+
 .topnav-right {
   float: right;
 }
+
 #button {
   border: none;
   padding: 16px 32px;
@@ -168,12 +183,12 @@ header {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.15);
   color: white;
-  border-radius: 50px;
+  border-radius: none;
   top: 0;
 }
 
 #button:hover {
-  background-color: rgba(61, 61, 61, 0.14);
+  background-color: grey;
 }
 
 #title {
@@ -225,4 +240,99 @@ header {
 .change .bar3 {
   transform: rotate(45deg) translate(-8px, -8px);
   width:35px;
+}
+
+#submitoverlay {
+    display: none;
+    background-color: none;
+}
+
+#submitsheet {
+    background-color: white;
+    border: 4px;
+    border-radius: 25px;
+    margin: auto;
+    width: 30%;
+    min-width: 300px;
+    height: 30%;
+    padding: 8px;
+    position: absolute;
+    top: 5615px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+
+}
+
+#submitsheet p {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.button {
+    text-align: center;
+    background-color: rgb(248,154,71);
+    padding: 8px;
+    width: 160px;
+    margin: 5px 30px;
+    border-radius: 50px;
+    transition: transform .1s;
+    font-family:helvetica;
+    color:white;
+
+}
+
+.button:hover {
+    background-color: white;
+    font-family:helvetica;
+    color:rgb(248,154,71);
+    transform: scale(.97);
+
+}
+
+#submitsheet .button  {
+    margin: auto;
+    background-color: rgb(248,154,71);
+    font-family:helvetica;
+    color:white;
+    /* border: 2px rgb(248,154,71) solid; */
+    transform: scale(.97);
+
+}
+
+
+#control {
+    display: flex;
+    position: relative;
+    float:left;
+    margin-left: 46.5em;
+    top: 5px;
+
+
+}
+
+#control .button {
+    margin: 5px;
+
+}
+
+footer {
+  background:darkgrey;
+  /*pink*/
+  position: fixed;
+  /* padding: 1rem; */
+  margin-top: 36px;
+  text-align: center;
+  /* border-radius: 1rem; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer ul li {
+  color: white;
+  display: inline-block;
+  text-align: center;
+  font-size: 1em;
+  padding: .5rem;
 }
