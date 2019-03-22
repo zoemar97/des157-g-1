@@ -13,12 +13,6 @@ body {
   background-color: #7a63ff;
 }
 
-h2 {
-  text-shadow:1px;
-  font-size: 25px;
-  font-family: Helvetica;
-  color: #F69A50;
-}
 
 nav {
   position: fixed;
@@ -78,10 +72,7 @@ a:hover {
   color: white;
 }
 
-#state {
-  float: left;
-  margin-left: 1px;
-}
+
 
 #page1 {
   background-color: #3946FF;
@@ -104,51 +95,6 @@ a:hover {
 
 }
 
-#subject {
-  /* text-align: justify; */
-  height:200px;
-}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-
-label {
-  padding: 12px 12px 12px 0;
-}
-
-.row2 {
-  width:90%;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: grey;
-  padding: 20px;
-}
-
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-.col-75 {
-  float: left;
-  width: 65%;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 #girl {
   position: absolute;
@@ -168,9 +114,6 @@ header {
   display: inline-block;
 }
 
-.topnav-right {
-  float: right;
-}
 
 #button {
   border: none;
@@ -183,7 +126,6 @@ header {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.15);
   color: white;
-  border-radius: none;
   top: 0;
 }
 
@@ -241,10 +183,64 @@ header {
   transform: rotate(45deg) translate(-8px, -8px);
   width:35px;
 }
+h2 {
+  font-size: 25px;
+  color: #F69A50;
+}
+
+#state {
+  float: left;
+  margin-left: 1px;
+}
+
+#subject {
+  /* text-align: justify; */
+  height:200px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+}
+
+.row2 {
+  width:90%;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: grey;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 65%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 #submitoverlay {
     display: none;
-    background-color: none;
 }
 
 #submitsheet {
@@ -277,14 +273,12 @@ header {
     margin: 5px 30px;
     border-radius: 50px;
     transition: transform .1s;
-    font-family:helvetica;
     color:white;
 
 }
 
 .button:hover {
     background-color: white;
-    font-family:helvetica;
     color:rgb(248,154,71);
     transform: scale(.97);
 
@@ -293,7 +287,6 @@ header {
 #submitsheet .button  {
     margin: auto;
     background-color: rgb(248,154,71);
-    font-family:helvetica;
     color:white;
     /* border: 2px rgb(248,154,71) solid; */
     transform: scale(.97);
